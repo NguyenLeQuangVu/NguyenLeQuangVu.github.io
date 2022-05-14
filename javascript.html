@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>JS-1</title>
+        <style>
+            #words{
+                width: 280px;
+                height: 1000px;
+                background-color: aqua;
+                color: blue;
+                font-size: 55px;
+                line-height: 150px;
+                padding-left: 30px;
+            }
+            #girl-friend{
+                width: 280px;
+                height: 1000px;
+                background-color: hotpink;
+                color: blue;
+                font-size: 55px;
+                line-height: 150px;
+                padding-left: 40px;
+                border: 1px solid black;
+            }
+            .container{
+                display: flex;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <button id="words">Click Here For Giving Your Full Name</button>
+            <div id="girl-friend">Have You a GIRL FRIEND</div>
+        </div>
+        <script>
+            let contentNumber1 = 1000;
+            var contentNumber2 = 2000;
+            const $year1995 = 1995;
+            var _wordsTranslateInVie = "Cảm Ơn Bạn <3 ! Tên Của Bạn Thật Là Đẹp"
+            let arr = [1, 2, 3];
+            let number = 10023;
+            var name = "user";
+            var $girlFriend = "Please Give Me Your Girl Friendsss"
+            let _yourLastName = "Let Me Know Your Name, Sir!";
+            var $myContentAboutJob = "Công Việc Trong Tương Lai";
+            document.getElementById("words").onclick = () =>{
+                document.getElementById("words").innerText = _wordsTranslateInVie;
+            let $yourGivenName = prompt (_yourLastName);
+            alert($yourGivenName);
+            console.log(number);
+            console.log(arr);
+            console.log(name);
+            console.warn($yourGivenName);
+            console.info($yourGivenName);
+            console.error($yourGivenName)
+            }
+            document.getElementById("girl-friend").onclick = () =>{
+                document.getElementById("girl-friend").innerText = $girlFriend;
+            let $yourGivenGirl = prompt ($girlFriend);
+            alert($yourGivenGirl);
+            console.info($yourGivenGirl);
+            }
+        </script>
+    </body>
+</html>
